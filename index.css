@@ -1,0 +1,296 @@
+@font-face {font-family: lemon; src: url(font/LEMONMILK-Medium.otf);}
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
+
+body {
+	overflow: hidden;
+	background: #222;
+	/*background-image: url(test.png);*/
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center center;
+}
+
+#book {
+	margin: 5% auto;
+	width: 1152px;
+	height: 752px;
+}
+
+#book .turn-page {
+	background-color: #fdfdec;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+.cover {
+	/*Works but need to comment out book background*/
+	background-color: #f7a4a0;
+}
+
+.title-page {
+	text-align: center;
+}
+
+.title-page h1 {
+	/*color: #f7a4a0;*/
+	color: #222;
+	margin-top: 5em;
+	/*font-family: lemon;*/
+	font-family: 'Ovo', serif;
+	font-weight: normal;
+}
+
+.title-page h3 {
+	color: #222;
+	font-family: 'Ovo', serif;
+	font-weight: normal;
+}
+
+.title-page hr {
+	width: 15em;
+	border-color: #f7a4a0;
+}
+
+.title-page img {
+	width: 10em;
+	height: auto;
+}
+
+.roster-page { text-align: center; }
+
+.roster-page .committee {
+	margin-top: 5em;
+	font-weight: normal;
+	font-family: 'Ovo', serif;
+	margin-bottom: 10px;
+}
+
+.roster-page .committee-names {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25em;
+	margin-bottom: 5em;
+}
+
+.roster-page .committee-names b {
+	margin: 5px 10px;
+	font-weight: normal;
+}
+
+.roster-grid {
+	margin-top: 5em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 30em;
+	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+ 	grid-template-rows: auto;
+ 	grid-template-areas: "left right";
+}
+
+.left h2, .right h2 { font-weight: normal; }
+
+.left ul, .right ul {
+	text-align: center;
+	padding: 0;
+}
+
+.left ul li, .right ul li {	list-style-type: none; }
+
+.content-page .content-title{
+	text-align: center;
+	font-weight: normal;
+	margin-top: 5em;
+}
+
+.content-page hr {
+	width: 20em;
+	border-color: #f7a4a0;
+}
+
+.content-page ol {
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.chapter-title {
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.chapter-line {
+	border-color: #f7a4a0;
+	width: 25em;
+}
+
+.intro-title-page, .promo-title-page, .nac-title-page, .exhibition-title-page, .comment-title-page {
+	background-color: #bce3db !important;
+}
+
+.intro-title-page .chapter-line:nth-child(1), .promo-title-page .chapter-line:nth-child(1), 
+.nac-title-page .chapter-line:nth-child(1), .exhibition-title-page .chapter-line:nth-child(1),
+.comment-title-page .chapter-line:nth-child(1) {
+	margin-top: 15em;
+}
+
+.intro-body { position: relative; }
+
+.page-title {
+	font-weight: normal;
+	font-family: 'Gentium Book Basic', serif;
+	padding-left: 4em;
+}
+
+.header-page-line {
+	width: 10em;
+	border-color: #f7a4a0;
+	position: absolute;
+	left: 4em;
+	top: 40px;
+}
+
+.intro-body .intro-text {
+	padding-left: 4em;
+	padding-right: 4em;
+	font-family: 'Ovo', serif;
+}
+
+.footer-page-line {
+	width: 10em;
+	border-color: #f7a4a0;
+	position: absolute;
+	right: 4em;
+	bottom: 30px;
+}
+
+.intro-head {
+	text-align: center;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.pairs {
+	width: 20em;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+}
+
+.intro-grid {
+	margin-top: 10em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 34em;
+	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr;
+ 	grid-template-rows: auto;
+ 	grid-template-areas: "intro-left intro-mid intro-right";
+}
+
+.intro-left .intro-head, .intro-mid .intro-head, .intro-right .intro-head {
+	margin: 0;
+}
+
+.intro-left ul, .intro-mid ul, .intro-right ul {
+	text-align: center;
+	padding: 0;
+}
+
+.intro-left ul li, .intro-mid ul li, .intro-right ul li {
+	list-style-type: none;
+}
+
+.promo-body { position: relative; }
+
+.promo-vid, .exhibition-vid { 
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden; 
+}
+
+.promo-vid iframe, .exhibition-vid iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.promo-body p, .exhibition-body p {
+	padding-left: 4em;
+	font-family: 'Ovo', serif;
+}
+
+.promo-img {
+	width: 30em;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Ovo', serif;
+}
+
+.promo-img img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.promo-body .artist-des, .nac-body .artist-des, .exhibition-body .artist-des, 
+.comment-title-page .artist-des {
+	width: 15em;
+	padding: 5px;
+	text-align: center;
+	/*border: solid;*/
+	position: absolute;
+}
+
+.black-alpha {background-color: rgba(0,0,0,0.5);color: #fff;}
+.white-alpha {background-color: rgba(255,255,255,0.8);color: #222;}
+
+.nac-body {
+	position: relative;
+}
+
+.nac-img-container {
+	position: absolute;
+	width: 30em;
+	overflow: hidden;
+}
+
+.nac-img-container img {
+	width: 100%;
+	height: auto;
+}
+
+.exhibition-body { position: relative; }
+
+.exhibition-img-col {
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.exhibition-img-col img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.exhibition-img-col img:hover {
+	/*transform: translateY(-10px);*/
+	opacity: 0.6;
+}
+
+.comment-list {
+	width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comment-list h3 {
+	text-align: center;
+	margin-top: 10em;
+}
