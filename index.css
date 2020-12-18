@@ -159,6 +159,13 @@ body {
 	font-family: 'Ovo', serif;
 }
 
+.message {
+	font-weight: normal;
+	width: 20em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .footer-page-line {
 	width: 10em;
 	border-color: #f7a4a0;
